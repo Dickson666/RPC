@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service Model {
+    rpc mod (img) returns (vector) {}
+}
+
+message img{
+    repeated string indata = 1;
+    int32 img_num = 2;
+}
+
+message vector{
+    repeated float outdata = 1;
+}
