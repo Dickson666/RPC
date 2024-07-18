@@ -16,7 +16,7 @@ class dataset(Dataset):
         return len(self.data)
     
     def __getitem__(self, index):
-        return torch.tensor(self.data[index])
+        return self.data[index]
 
 class model():
     def __init__(self) -> None:
